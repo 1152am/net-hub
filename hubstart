@@ -1,7 +1,7 @@
 
 -- Hey, Jesse
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "11:52", HidePremium = false, SaveConfig = true, ConfigFolder = "ElevenFiftyTwoConfig"})
+local Window = OrionLib:MakeWindow({Name = "Net-x", HidePremium = false, SaveConfig = true, ConfigFolder = "ElevenFiftyTwoConfig"})
 local Tab = Window:MakeTab({
 	Name = "Scripts",
 	Icon = "rbxassetid://4483345998",
@@ -9,14 +9,14 @@ local Tab = Window:MakeTab({
 })
 OrionLib:MakeNotification({
 	Name = "Hello, friend!",
-	Content = "My spotify name is 11:52, thats why I chose that for the hub window. Key for Syntax V2 is SyntaxBestHub",
+	Content = "Jesse, I will update this frequently, and if you want me to add a few scripts of your choice, I will.",
 	Image = "rbxassetid://4483345998",
-	Time = 20
+	Time = 28
 })
 Tab:AddButton({
-	Name = "Syntax V2",
+	Name = "CMD-X",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxV2/b7a88a7b84174e3c2220c7a8ca477e40699ddd2c/Syntaxontop'),true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
       end
  })
 Tab:AddButton({
@@ -33,5 +33,17 @@ _G.Jitteryness = Vector3.new(50,0,0) -- set it to high value if ur part fall, de
 _G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
 
+  	end    
+})
+Tab:AddButton({
+	Name = "Pendulum Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()")
+  	end    
+})
+Tab:AddButton({
+	Name = "Walk On Walls",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
   	end    
 })
