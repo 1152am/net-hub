@@ -5,6 +5,12 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+OrionLib:MakeNotification({
+	Name = "Hello, friend!",
+	Content = "My spotify name is 11:52, thats why I chose that for the hub window.",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
 Tab:AddButton({
 	Name = "Syntax V2",
 	Callback = function()
