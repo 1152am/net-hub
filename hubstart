@@ -1,0 +1,32 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "11:52", HidePremium = false, SaveConfig = true, ConfigFolder = "ElevenFiftyTwoConfig"})
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Syntax V2",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxV2/b7a88a7b84174e3c2220c7a8ca477e40699ddd2c/Syntaxontop'),true))()
+          OrionLib:MakeNotification({
+	          Name = "Syntax V2 Loaded.",
+	          Content = "The key is "SyntaxBestHub",
+	          Image = "rbxassetid://4483345998",
+	          Time = 5
+
+  	end    
+})
+Tab:AddButton({
+	Name = "sky.gg",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "MiztHub V4",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/dimension-sources/random-scripts-i-found/main/MiztHub",true))()
+
+  	end    
+})
