@@ -47,3 +47,15 @@ Tab:AddButton({
       		loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
   	end    
 })
+Tab:AddButton({
+	Name = "Fates Admin",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "Domain-X",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+	end
+})	
