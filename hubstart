@@ -1,3 +1,5 @@
+
+-- Hey, Jesse
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "11:52", HidePremium = false, SaveConfig = true, ConfigFolder = "ElevenFiftyTwoConfig"})
 local Tab = Window:MakeTab({
@@ -7,22 +9,16 @@ local Tab = Window:MakeTab({
 })
 OrionLib:MakeNotification({
 	Name = "Hello, friend!",
-	Content = "My spotify name is 11:52, thats why I chose that for the hub window.",
+	Content = "My spotify name is 11:52, thats why I chose that for the hub window. Key for Syntax V2 is SyntaxBestHub",
 	Image = "rbxassetid://4483345998",
-	Time = 10
+	Time = 20
 })
 Tab:AddButton({
 	Name = "Syntax V2",
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxV2/b7a88a7b84174e3c2220c7a8ca477e40699ddd2c/Syntaxontop'),true))()
-          OrionLib:MakeNotification({
-	          Name = "Syntax V2 Loaded.",
-	          Content = "The key is "SyntaxBestHub",
-	          Image = "rbxassetid://4483345998",
-	          Time = 5
-
-  	end    
-})
+      end
+ })
 Tab:AddButton({
 	Name = "sky.gg",
 	Callback = function()
@@ -32,7 +28,10 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "MiztHub V4",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/dimension-sources/random-scripts-i-found/main/MiztHub",true))()
+      		_G.PowerfulNet = false -- Turn on if u want best net, BUT SUPER LAGGY
+_G.Jitteryness = Vector3.new(50,0,0) -- set it to high value if ur part fall, default is -30
+_G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
 
   	end    
 })
